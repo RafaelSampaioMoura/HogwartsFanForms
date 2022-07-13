@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-header {
+.header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
@@ -26,4 +26,18 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+.inputDiv3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.divRadio {
+  display: flex;
+  flex-flow: row;
+}
+
+#label-content {
+  display: flex;
+  flex-flow: column wrap;
 }
