@@ -40,21 +40,24 @@
     </header>
     <main>
       <form id="evaluation-form">
-        <label for="input-name">Nome:</label>
-        <input id="input-name" type="text" />
+        <div class="inputDiv">
+          <label for="input-name">Nome:</label>
+          <input id="input-name" type="text" />
+          <label for="input-lastname">Sobrenome:</label>
+          <input id="input-lastname" type="text" />
+        </div>
 
-        <label for="input-lastname">Sobrenome:</label>
-        <input id="input-lastname" type="text" />
-
-        <label for="input-email">E-mail:</label>
-        <input id="input-email" placeholder="Email" type="email" />
-        <label for="house">Casa:</label>
-        <select name="house" id="house">
-          <option id='gitnoria-house' value="Gitnória">Gitnória</option>
-          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-          <option id="corvinode-house" value="Corvinode">Corvinode</option>
-          <option id="pytherina-house" value="Pytherina">Pytherina</option>
-          </select>
+        <div class="inputDiv">
+          <label for="input-email">E-mail:</label>
+          <input id="input-email" placeholder="Email" type="email" />
+          <label for="house">Casa:</label>
+          <select name="house" id="house">
+            <option id='gitnoria-house' value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+        </div>
         
       </form>
       <img
