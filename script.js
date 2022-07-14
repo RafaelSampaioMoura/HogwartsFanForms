@@ -3,6 +3,8 @@ const loginSenha = document.querySelector('#login-password');
 const loginBtn = document.querySelector('#login-btn');
 const agreementBox = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
+const charCounter = document.querySelector('#counter');
+const comentario = document.querySelector('#textarea');
 
 // console.log(loginBtn);
 
@@ -24,3 +26,7 @@ agreementBox.addEventListener('change', () => {
     submitBtn.disabled = false;
   }
 });
+
+comentario.addEventListener('input', () => {
+  charCounter.textContent = 500 - comentario.value.length;
+})
