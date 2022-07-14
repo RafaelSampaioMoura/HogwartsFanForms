@@ -132,6 +132,10 @@
               <input name="rate" value="4" type="radio" />
             </label>
             <label>
+              5
+              <input type="radio" name="rate" value="5">
+            </label>
+            <label>
               6
               <input name="rate" value="6" type="radio" />
             </label>
@@ -153,6 +157,18 @@
             </label>
           </div>
         </div>
+
+        <div class="column-class">
+          <label for="comentario" class="textarea">Deixe o seu comentário:</label>
+          <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="500"></textarea>
+        </div>
+
+        <div>
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement">
+        </div>
+
+        <button type="submit" id="submit-btn">Enviar</button>
       </form>
       <img
         src="./images/trybewarts-colored.svg"
