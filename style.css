@@ -21,23 +21,26 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  gap: 1.5em;;
   
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
-.inputDiv3 {
+.row-class {
+  display: flex;
+  flex-direction: row;
+}
+.row-class label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+.column-class {
   display: flex;
   flex-direction: column;
 }
 
-.divRadio {
-  display: flex;
-  flex-flow: row;
-}
 
-#label-content {
-  display: flex;
-  flex-flow: column wrap;
-}
