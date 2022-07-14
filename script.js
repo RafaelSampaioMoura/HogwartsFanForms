@@ -40,6 +40,8 @@ function pegaInfo() {
   usuario.push(document.querySelector('#input-email').value);
   usuario.push(document.querySelector('#house').value);
   usuario.push(document.querySelector('input[name="family"]:checked').value);
+  usuario.push(document.querySelector('input[name="rate"]:checked').value);
+  usuario.push(document.querySelector('#textarea').value);
   return usuario;
 }
 
@@ -71,6 +73,32 @@ function familiaPerfil() {
   return family;
 }
 
+function materiasPerfil() {
+  const materias = document.querySelectorAll('input.subject[type="checkbox"]:checked');
+  const materiasChecadas = document.createElement('li');
+  materiasChecadas.textContent = 'Matérias: ';
+  for (let i = 0; i < materias.length; i += 1) {
+    materiasChecadas.textContent += `${materias[i].value}, `;
+  }
+  return materiasChecadas;
+}
+
+function avaliacaoPerfil() {
+  const informações = pegaInfo();
+  const avaliação = document.createElement('li');
+  avaliação.textContent = `Avaliação: ${informações[5]}`;
+  return avaliação;
+}
+
+function comentariosPerfil() {
+  const informações = pegaInfo();
+  const commentary = document.createElement('li');
+  commentary.textContent = `Observações: ${informações[6]}`;
+  return commentary;
+}
+
+console.log(materiasPerfil());
+
 function montaPerfil() {
   const perfil = document.createElement('ul');
 
@@ -78,7 +106,10 @@ function montaPerfil() {
   perfil.appendChild(emailPerfil());
   perfil.appendChild(casaPerfil());
   perfil.appendChild(familiaPerfil());
-  perfil.id = 'perfil-aluno';
+  perfil.appendChild(materiasPerfil());
+  perfil.appendChild(avaliacaoPerfil());
+  perfil.appendChild(comentariosPerfil());
+  perfil.id = 'form-data';
 
   document.querySelector('main').insertBefore(perfil, trybewartsFormLogo);
 }
