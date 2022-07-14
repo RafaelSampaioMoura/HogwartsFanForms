@@ -17,9 +17,10 @@ loginBtn.addEventListener('click', () => {
   }
 });
 
-submitBtn.addEventListener('click', (e) => {
-  if(agreementBox.checked === 'false') {
-    e.preventDefault();
-    alert('Você deve aceitar o uso das informações.')
+agreementBox.addEventListener('change', () => {
+  if(agreementBox.checked === false) {
+    submitBtn.disabled = true;
+  } else {
+    submitBtn.disabled = false;
   }
-})
+});
