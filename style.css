@@ -21,8 +21,7 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
-  gap: 1.5em;;
-  
+  gap: 1.5em;
 }
 
 #trybewarts-forms-logo {
@@ -42,5 +41,3 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-
