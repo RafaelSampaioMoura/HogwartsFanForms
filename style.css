@@ -6,11 +6,16 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  color: aliceblue;
 }
 
 .trybewarts-login {
   display: flex;
   align-self: flex-end;
+}
+
+.trybewarts-header-logo {
+  height: 40px;
 }
 
 main {
@@ -27,17 +32,24 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
 .row-class {
   display: flex;
   flex-direction: row;
 }
+
 .row-class label {
   display: flex;
   flex-direction: column;
   padding: 10px;
   align-items: center;
 }
+
 .column-class {
   display: flex;
   flex-direction: column;
+}
+
+#perfil-aluno {
+  list-style-type: none;
 }
